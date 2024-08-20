@@ -1,0 +1,55 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+.emrald_gradient{
+    @apply bg-gradient-to-r from-slate-400 to-gray-900 bg-clip-text text-transparent
+    }
+
+    .nav-bg {
+    @apply bg-gradient-to-r from-cyan-400 to-cyan-700
+    }
+
+    .blue_gradient {
+    @apply bg-gradient-to-r from-cyan-400 to-cyan-700 bg-clip-text text-transparent
+    }
+
+    .darkness {
+    @apply bg-gradient-to-r from-neutral-600 to-slate-700 bg-clip-text text-transparent
+    }
+
+    .sign_button { 
+        @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black;
+    }
+
+    .scale_anime {
+    @apply transform active:scale-75 hover:opacity-50 transition-all 
+    }
+
+    .dropdown {
+    @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+    }
+
+    .dropdown_link {
+    @apply text-sm text-gray-700 hover:text-gray-500 font-medium;
+    }
+
+    .todos {
+    @apply  p-32 w-auto shadow-[20px_20px_40px_-30px] shadow-shadow-blue opacity-50 hover:opacity-100 transition-all 
+    }  
+    .text_areas {
+    @apply border-2 rounded-lg px-4 pt-2 outline-none h-[2.8rem] w-60 resize-none m-2 focus:border-black transition-all duration-150
+    }
+
+    .dark {
+        @apply bg-black text-white m-0 
+    }
+
+    .input {
+        @apply rounded-lg pl-3 outline-none h-[2.8rem] w-60 resize-none m-2  
+    }
+    
+}
